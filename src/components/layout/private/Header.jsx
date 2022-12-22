@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav } from "./nav";
+import { Nav } from "./NavBar";
 
 export const Header = () => {
   return (

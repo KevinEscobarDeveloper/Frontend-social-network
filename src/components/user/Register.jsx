@@ -25,13 +25,11 @@ export const Register = () => {
 
     const data = await request.json();
 
-    console.log(data);
     if(data.status == "success"){
       setSaved("Saved")
     }else{
       setSaved("Error")
     }
-    console.log(saved)
 
   
   } //Fin del metodo de guardar

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Global } from "../../helpers/Global";
 import useAuth from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
+import { NavLink } from "react-router-dom";
 
 export const Login = () => {
   const { form, changed } = useForm({});
@@ -76,7 +77,12 @@ export const Login = () => {
             value="Identificate"
             className="btn btn-success"
           />
+          
         </form>
+        <br/>
+        <NavLink to="/registro" >
+            <button className="btn btn-success">Registrarse</button>
+          </NavLink>
       </div>
     </>
   );
